@@ -15,18 +15,19 @@
       rel="stylesheet"
       href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css"
     />
-    <!-- Font awesome -->
-    <!-- <link
-      rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
-    /> -->
-    <script
-      defer
-      src="/node_modules/@fortawesome/fontawesome-free/js/all.js"
-    ></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- endbuild -->
+    <!-- Font awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -87,10 +88,75 @@
                 <a class="dropdown-item" href="#">Separated link</a>
               </div>
             </li>
+
+            <a class="btn btn-secondary cta" id="loginButton"> Log in</a>
+            <a href="signup.html" class="btn btn-warning text-dark cta"
+              >Free Sign Up</a
+            >
           </ul>
         </div>
       </div>
     </nav>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Login</h3>
+            <button class="close" type="button" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label for="loginEmail" class="sr-only"
+                      >Email address</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="loginEmail"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <label for="loginPassword" class="sr-only">Password</label>
+                    <input
+                      type="password"
+                      class="form-control form-control-sm"
+                      id="loginPassword"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" />
+                      <label class="form-check-label"> Remember me</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-sm ml-auto"
+                    data-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">
+                    Sign in
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of login modal Login Modal -->
 
     <!-- End of navigation -->
 
