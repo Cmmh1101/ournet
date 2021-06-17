@@ -13,20 +13,24 @@
     <!-- Bootswatch CSS -->
     <link
       rel="stylesheet"
-      href="node_modules/bootswatch/dist/superhero/bootstrap.min.css"
+      href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css"
     />
     <!-- Font awesome -->
-    <link
+    <!-- <link
       rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    /> -->
+    <script
+      defer
+      src="/node_modules/@fortawesome/fontawesome-free/js/all.js"
+    ></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- endbuild -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -34,7 +38,10 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navigation" id="nav">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary navigation"
+      id="nav"
+    >
       <div class="container">
         <a class="navbar-brand" href="index.html">Our<br />Net</a>
         <button
@@ -80,9 +87,6 @@
                 <a class="dropdown-item" href="#">Separated link</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.carlamontano.tech">Blog </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -91,7 +95,7 @@
     <!-- End of navigation -->
 
     <!-- Jumbo Hero -->
-    <header class="jumbotron jumbotron-fluid jumbo-hero">
+    <header class="jumbotron jumbotron-fluid jumbo-hero bg-info">
       <div
         class="
           container
@@ -102,116 +106,306 @@
           mt-5
         "
       >
-        <div
-          class="
-            row
-            my-5
-            header-content
-            d-flex
-            align-items-center
-            justify-content-center
-          "
-        >
+        <div class="row mt-md-5">
           <div
             class="
+              col-12
               content-animation
-              d-flex
-              align-items-center
-              justify-content-center
+              d-md-flex
+              justify-content-md-center
+              align-items-md-center
+              mt-md-5
             "
           >
-            <div class="col-4 col-md-6">
-              <img class="img-fluid" src="/img/phones.png" alt="" />
-            </div>
-            <div class="hero-text col-8 col-md-6 hero-container">
+            <div
+              class="
+                hero-text
+                col-lg-6
+                hero-container
+                mt-5 mt-lg-0
+                text-center
+                d-flex
+                justify-content-center
+                align-items-center
+                flex-column
+              "
+            >
               <h1 class="text-white">
                 Our Net<br />
                 <span class="text-primary font-weight-bolder"
                   ><strong>Group Organizer</strong></span
                 >
               </h1>
-              <p class="lead text-white">
+              <p class="lead text-white mt-5">
                 OurNet is YOUR new group Net to keep track of important events,
-                news, moments, recommentations, and more - FOR FREE!
+                news, moments, recommentations, and more!
               </p>
-              <a href="signup.html" class="btn btn-primary mt-3"
-                >Sign up now
+              <a href="signup.html" class="btn btn-primary mt-3 cta"
+                >Sign up now - OurNet is Free!
               </a>
             </div>
+            <div
+              class="
+                col-lg-6
+                mt-md-5
+                d-flex
+                justify-content-center justify-content-lg-end
+                align-items-center
+              "
+            >
+              <img class="w-100" src="/img/phones.png" alt="" />
+            </div>
           </div>
-
-          <!-- <div class="col-2 mx-auto">
-            <img
-              src="img/heroimg-border.png"
-              class="img-fluid img-hero d-none d-md-flex justify-content-center"
-              alt=""
-            />
-          </div> -->
         </div>
       </div>
     </header>
 
     <!-- End of Jumbo hero -->
-    <main class="col-xl-10 mx-auto">
+    <main>
       <div class="container">
-        <div class="row d-flex justify-content-center my-5">
-          <div class="col-12 mt-5 mb-3 content-container" id="projects">
-            <h1>Projects</h1>
+        <div class="row">
+          <div
+            class="
+              col-lg-10
+              mx-auto
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-wrap
+            "
+          >
+            <div class="col-md-6 mt-5 mb-3 content-container" id="intro">
+              <h2 class="mb-5">
+                Friends, family events & recommendations have never been easier
+                to manage.
+              </h2>
+              <p class="mb-md-5">Trust OurNet to manage Your group:</p>
+
+              <p class="mb-3">
+                <i class="fas fa-user-check mr-3 text-info"></i>Calendar of
+                activities and important events
+              </p>
+              <p class="mb-3">
+                <i class="fas fa-user-check mr-3 text-info"></i>Share photos and
+                videos with your group
+              </p>
+              <p class="mb-3">
+                <i class="fas fa-user-check mr-3 text-info"></i>Books, movies,
+                recipes, and more Recommendations
+              </p>
+              <p class="mb-3">
+                <i class="fas fa-user-check mr-3 text-info"></i>Instant messages
+              </p>
+              <div
+                class="
+                  col
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  p-0
+                  mt-5
+                "
+              >
+                <div
+                  class="col-6 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-fluid badge-img badge-google_play"
+                    src="/img/googleplay.png"
+                    alt="Google play badge"
+                  />
+                </div>
+                <div
+                  class="col-6 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-fluid badge-img badge-apple_store"
+                    src="/img/applestore.png"
+                    alt="Apple Store badge"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="
+                  col-12
+                  d-flex
+                  justify-content-center justify-content-md-end
+                "
+              >
+                <img
+                  class="
+                    border border-info border-5
+                    intro-img
+                    rounded-circle
+                    my-5
+                  "
+                  src="/img/groupmeet.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-info py-5 mt-5">
+        <div class="container my-5">
+          <div class="row">
+            <div class="col text-center my-5">
+              <h4>
+                You will wonder how you managed your friends and family plans
+                before OurNet
+              </h4>
+              <a href="signup.html" class="btn btn-primary mt-3 cta"
+                >Sign up now - OurNet is Free!
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white d-flex justify-content-center py-3">
-      <div class="container">
-        <div class="row mt-3">
-          <div class="col-8 col-md-5 mx-auto">
-            <a href="#">Our Net</a>
+    <footer class="bg-primary text-white py-3">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-4">
+            <ul class="list-group">
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Features</a>
+              </li>
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Aboout</a>
+              </li>
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Support</a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="row my-3 my-md-5">
-          <div class="col-sm-6 col-md-4 d-flex justify-content-center">
-            <nav class="nav flex-column">
-              <a class="nav-link active" href="#">Home</a>
-              <a class="nav-link" href="#projects">Projects</a>
-              <a class="nav-link" href="#about">About</a>
-            </nav>
+          <div class="col-4">
+            <ul class="list-group">
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Features</a>
+              </li>
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Aboout</a>
+              </li>
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Support</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-sm-6 col-md-4 d-flex justify-content-center">
-            <nav class="nav flex-column">
-              <a class="nav-link" href="contact.html">Contact</a>
-              <a class="nav-link" href="blog.carlamontano.tech">Blog</a>
-            </nav>
+          <div class="col-4">
+            <ul class="list-group">
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Features</a>
+              </li>
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Aboout</a>
+              </li>
+              <li
+                class="
+                  list-group-item
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <a href="#">Support</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-4 text-center">
-            <h5>Let's Connect</h5>
-            <div
-              class="
-                d-flex
-                align-items-center
-                justify-content-center
-                connect-icons
-              "
-            >
-              <a class="nav-link m-2" href="https://github.com/cmmh1101"
-                ><i class="fa fa-github" aria-hidden="true"></i
-              ></a>
-              <a
-                class="nav-link m-2"
-                href="https://www.linkedin.com/in/carla-montano"
-                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-              ></a>
-              <a class="nav-link m-2" href="https://twitter.com/cmmh11"
-                ><i class="fa fa-twitter" aria-hidden="true"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="text-white text-center small">
-          2021 | All Rights Reserved
         </div>
       </div>
+      <div class="col text-center mt-5">2021 | All rights reserved</div>
     </footer>
 
     <!-- End of Footer -->
