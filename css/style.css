@@ -7,9 +7,20 @@
 html {
   font-family: "Poppins", sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cabin Sketch", cursive;
+}
 p,
-a {
+a,
+span {
   letter-spacing: 1px;
+  font-family: "Neucha", cursive;
 }
 
 .navigation {
@@ -25,7 +36,8 @@ a {
 .jumbo-hero {
   position: relative;
   z-index: 0;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: auto;
 }
 .jumbo-hero img {
   max-width: 450px;
