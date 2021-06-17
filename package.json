@@ -8,7 +8,7 @@
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin signup.html -d dist --htmlmin -o dist/signup.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin signup.html -d dist --htmlmin -o dist/signup.html && usemin app.html -d dist --htmlmin -o dist/app.html",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run imagemin && npm run usemin"
   },

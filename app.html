@@ -34,11 +34,11 @@
       href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Neucha&family=Poppins:wght@100;200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>OurNet Sign Up | Group News organizer</title>
+    <title>OurNet | Group News organizer</title>
   </head>
-  <body>
+  <body class="d-flex">
     <!-- Navigation -->
-    <nav
+    <!-- <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary navigation"
       id="nav"
     >
@@ -93,9 +93,9 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- Login Modal -->
-    <div id="loginModal" class="modal fade" role="dialog">
+    <!-- <div id="loginModal" class="modal fade" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -152,12 +152,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- End of navigation -->
 
     <!-- Jumbo Hero -->
-    <header class="jumbotron jumbotron-fluid bg-info">
+    <!-- <header class="jumbotron jumbotron-fluid bg-info">
       <div class="container">
         <div class="row mt-md-5">
           <div class="col-12 content-animation mt-5 mt-md-0">
@@ -173,94 +173,61 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <!-- End of Jumbo hero -->
-    <main>
-      <div class="my-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 col-lg-8 col-xl-6 mx-auto my-5">
-              <form>
-                <fieldset>
-                  <h2>Sign up for your free</h2>
-
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter email"
-                    />
-                    <small id="emailHelp" class="form-text text-muted"
-                      >We'll never share your email with anyone else.</small
-                    >
-                  </div>
-                  <div class="form-group">
-                    <label for="nameSignUp">Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="nameSignUp"
-                      placeholder="First Name"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="groupName">Group Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="groupName"
-                      placeholder="Ex. Besties Net, Family Net"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="passwordSignUp">Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="passwordSignUp"
-                      placeholder="Password"
-                    />
-                    <small id="pwDirections" class="form-text text-muted"
-                      >Password must be 8 characters, including one letter and
-                      one number</small
-                    >
-                  </div>
-                  <div class="form-group">
-                    <label for="confPasswordSignUp">Re-enter Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="confPasswordSignUp"
-                      placeholder="Password"
-                    />
-                  </div>
-                  <p>
-                    By clicking Create Account, I agree to the
-                    <a>terms and conditions</a> and <a>privacy policy.</a> I
-                    also agree that I am the legal guardian of any user under
-                    age 13 that I add to my family account and consent to their
-                    use of OurNet.
-                  </p>
-                  <!-- This is a temporal <a> tag for demo porpuses TODO change to button -->
-                  <a href="app.html" type="submit" class="btn btn-primary my-3">
-                    Submit
-                  </a>
-                </fieldset>
-              </form>
+    <aside class="bg-info">
+      <div class="container side-bar">
+        <div class="row">
+          <div class="col-12 py-4">
+            <div class="ourNetLogo">
+              <a class="py-3" href="#">OurNet Logo</a>
             </div>
+            <div class="troop-img my-5">
+              <img
+                class="img-fluid border border-warning"
+                src="/img/groupmeet.jpg"
+                alt="Troop Photo"
+              />
+              <h5 class="my-3 text-warning">Troop Name Here</h5>
+            </div>
+            <nav class="nav flex-column">
+              <a class="nav-link active-link px-0" href="#"
+                ><i class="fas fa-home px-2 text-secondary"></i>Home</a
+              >
+              <a class="nav-link px-0" href="#"
+                ><i class="fas fa-calendar px-2 text-secondary"></i>Calendar</a
+              >
+              <a class="nav-link px-0" href="#"
+                ><i class="fas fa-utensils px-2 text-secondary"></i>Recipes</a
+              >
+              <a class="nav-link px-0" href="#"
+                ><i class="fas fa-image px-2 text-secondary"></i>Gallery</a
+              >
+              <a class="nav-link px-0" href="#"
+                ><i class="fas fa-comment px-2 text-secondary"></i>My Troop
+                Recommends</a
+              >
+            </nav>
+            <nav class="nav flex-column mt-5">
+              <a class="nav-link px-0 small" href="#">Upgrade to Premium</a>
+              <a class="nav-link px-0 small" href="#">Get mobile app</a>
+              <a class="nav-link px-0 small" href="#">Troop Settings</a>
+              <a class="nav-link px-0 small" href="#">Support</a>
+              <a class="nav-link px-0 small" href="#">Sign Out</a>
+            </nav>
           </div>
         </div>
       </div>
+    </aside>
+    <main>
+      <div class="col-10">app</div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-primary text-white py-3">
+    <!-- <footer class="bg-primary text-white py-3">
       <div class="col text-center mt-5">2021 | All rights reserved</div>
-    </footer>
+    </footer> -->
 
     <!-- End of Footer -->
     <!-- build:js js/main.js -->

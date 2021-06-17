@@ -23,6 +23,14 @@ span {
   font-family: "Neucha", cursive;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 .navigation {
   width: 99.5%;
   position: absolute;
@@ -91,4 +99,23 @@ footer a:hover {
 }
 footer nav {
   color: #fff;
+}
+
+/* ======================= App Styles =================== */
+/* side bar */
+.side-bar {
+  width: 25vw;
+  height: 100vh;
+}
+
+aside .nav-link {
+  transition: all 0.3s ease-in-out;
+}
+
+aside .nav-link:hover {
+  background-color: #ffc107;
+}
+
+.active-link {
+  background-color: #ffc107;
 }
