@@ -36,150 +36,12 @@
     />
     <title>OurNet | Group News organizer</title>
   </head>
-  <body class="d-flex">
-    <!-- Navigation -->
-    <!-- <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary navigation"
-      id="nav"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Our<br />Net</a>
-        <button
-          class="navbar-toggler ml-auto"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarColor02"
-          aria-controls="navbarColor02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav ml-lg-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-              <span class="sr-only">(current)</span>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Features</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Dropdown</a
-              >
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
-            </li>
-            <button class="btn btn-secondary cta" id="loginButton">
-              Log in
-            </button>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-    <!-- Login Modal -->
-    <!-- <div id="loginModal" class="modal fade" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title">Login</h3>
-            <button class="close" type="button" data-dismiss="modal">
-              &times;
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <form>
-                <div class="form-row">
-                  <div class="form-group col-12">
-                    <label for="loginEmail" class="sr-only"
-                      >Email address</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control form-control-sm"
-                      id="loginEmail"
-                      placeholder="Enter email"
-                    />
-                  </div>
-                  <div class="form-group col-12">
-                    <label for="loginPassword" class="sr-only">Password</label>
-                    <input
-                      type="password"
-                      class="form-control form-control-sm"
-                      id="loginPassword"
-                      placeholder="Password"
-                    />
-                  </div>
-                  <div class="col">
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" />
-                      <label class="form-check-label"> Remember me</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <button
-                    type="button"
-                    class="btn btn-secondary btn-sm ml-auto"
-                    data-dismiss="modal"
-                  >
-                    Cancel
-                  </button>
-                  <button type="submit" class="btn btn-primary btn-sm ml-1">
-                    Sign in
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- End of navigation -->
-
-    <!-- Jumbo Hero -->
-    <!-- <header class="jumbotron jumbotron-fluid bg-info">
-      <div class="container">
-        <div class="row mt-md-5">
-          <div class="col-12 content-animation mt-5 mt-md-0">
-            <div
-              class="hero-text hero-container mt-5 d-flex align-items-center"
-            >
-              <h4 class="text-primary">
-                Say Bye to the endless scrolling and back and forth <br />
-                Welcome to <span class="text-white">Our Net</span>
-                Group Organizer
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header> -->
-
-    <!-- End of Jumbo hero -->
-    <aside class="bg-info">
-      <div class="container side-bar">
-        <div class="row">
-          <div class="col-12 py-4">
+  <body>
+    <!-- Side bar -->
+    <div class="appBody">
+      <div class="container side-bar mb-0">
+        <div class="row d-flex">
+          <div class="col-3 py-4 bg-info">
             <div class="ourNetLogo">
               <a class="py-3" href="#">OurNet Logo</a>
             </div>
@@ -191,12 +53,12 @@
               />
               <h5 class="my-3 text-warning">Troop Name Here</h5>
             </div>
-            <nav class="nav flex-column">
+            <nav class="nav flex-column nav-links">
               <a class="nav-link active-link px-0" href="#"
                 ><i class="fas fa-home px-2 text-secondary"></i>Home</a
               >
-              <a class="nav-link px-0" href="#"
-                ><i class="fas fa-calendar px-2 text-secondary"></i>Calendar</a
+              <a class="nav-link px-0" href="calendar.html"
+                ><i class="fas fa-calendar-alt px-2"></i>Calendar</a
               >
               <a class="nav-link px-0" href="#"
                 ><i class="fas fa-utensils px-2 text-secondary"></i>Recipes</a
@@ -217,12 +79,75 @@
               <a class="nav-link px-0 small" href="#">Sign Out</a>
             </nav>
           </div>
+          <main class="col-9 main-container">
+            <div>
+              <div class="col py-4">
+                <h1 class="mb-3">Welcome to OurNet!</h1>
+                <p>
+                  OutNet is perfect to be shared with every the members of your
+                  troop. You can be a part of different troops and access your
+                  accounts from any device.
+                </p>
+                <p class="mt-4">Next Steps:</p>
+                <nav class="nav flex-column ml-5">
+                  <a class="nav-link px-0" href="#"
+                    ><i class="fas fa-envelope px-2"></i>Invite troop members</a
+                  >
+                  <a class="nav-link px-0" href="calendar.html"
+                    ><i class="fas fa-calendar-alt px-2"></i>Add your next
+                    events to your shared calendar</a
+                  >
+                  <a class="nav-link px-0" href="#"
+                    ><i class="fas fa-utensils px-2 text-secondary"></i
+                    >Recommend movies, books, recipes, and more</a
+                  >
+                  <a class="nav-link px-0" href="#"
+                    ><i class="fas fa-image px-2 text-secondary"></i>Share
+                    images and videos of the special moments with your troop</a
+                  >
+                  <a class="nav-link px-0" href="#"
+                    ><i class="fas fa-comment px-2 text-secondary"></i>Plan -
+                    Share - Communicate - Enjoy</a
+                  >
+                </nav>
+
+                <div class="col">
+                  <div class="calendar" id="calendar">
+                    <hr class="border border-primary" />
+                    <h3>Calendar</h3>
+                    <hr class="border border-primary" />
+                    <div class="row single-day">
+                      <div class="col-3 border-right border-primary">
+                        <p>Thursday</p>
+                        <span class="big-calendar-number text-info">17</span>
+                        <p class="text-danger">Today</p>
+                      </div>
+                      <div class="col">
+                        <p>11:00am Brunch with the troop</p>
+                        <p>TODO: Buy drinks</p>
+                      </div>
+                    </div>
+                    <hr class="border border-primary" />
+                    <div class="row single-day">
+                      <div class="col-3 border-right border-primary">
+                        <p>Friday</p>
+                        <span class="big-calendar-number text-info">18</span>
+                        <p></p>
+                      </div>
+                      <div class="col">
+                        <p>6:00pm Maria is free for dinner</p>
+                        <p></p>
+                      </div>
+                    </div>
+                    <hr class="border border-primary" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
         </div>
       </div>
-    </aside>
-    <main>
-      <div class="col-10">app</div>
-    </main>
+    </div>
 
     <!-- Footer -->
     <!-- <footer class="bg-primary text-white py-3">

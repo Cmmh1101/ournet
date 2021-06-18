@@ -103,19 +103,34 @@ footer nav {
 
 /* ======================= App Styles =================== */
 /* side bar */
+.appBody {
+  position: relative;
+}
 .side-bar {
-  width: 25vw;
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  height: auto;
+}
+.main-container {
+  min-height: 100vh;
+  height: auto;
 }
 
-aside .nav-link {
+.nav-links .nav-link {
   transition: all 0.3s ease-in-out;
 }
 
-aside .nav-link:hover {
+.nav-links .nav-link:hover {
   background-color: #ffc107;
 }
 
-.active-link {
+.nav-links .active-link {
   background-color: #ffc107;
+}
+
+.big-calendar-number {
+  font-size: 3.5rem;
+  letter-spacing: 5px;
 }
